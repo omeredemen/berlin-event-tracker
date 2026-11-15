@@ -1,0 +1,793 @@
+{
+ "sample": true,
+ "updated": "2026-11-15T19:45+01:00",
+ "sources": {
+  "calendar": {
+   "ok": true,
+   "count": 3
+  },
+  "luma": {
+   "ok": true,
+   "count": 8
+  },
+  "kulturdaten": {
+   "ok": true,
+   "count": 14
+  },
+  "ticketmaster": {
+   "ok": true,
+   "count": 3
+  },
+  "resident_advisor": {
+   "ok": true,
+   "count": 3
+  },
+  "eventbrite": {
+   "ok": true,
+   "count": 11
+  }
+ },
+ "events": [
+  {
+   "id": "kulturdaten:ongoing0",
+   "source": "kulturdaten",
+   "title": "Exhibition: Berlin photography 1990–2000",
+   "start": "2026-11-05T00:00",
+   "end": "2026-12-17T19:00",
+   "allDay": true,
+   "venue": "Museum, Mitte",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "art"
+   ],
+   "free": false,
+   "price": "",
+   "description": "Sample long-running exhibition."
+  },
+  {
+   "id": "kulturdaten:ongoing1",
+   "source": "kulturdaten",
+   "title": "Group show: textile art",
+   "start": "2026-11-05T00:00",
+   "end": "2026-11-26T19:00",
+   "allDay": true,
+   "venue": "Museum, Mitte",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "art"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample long-running exhibition."
+  },
+  {
+   "id": "luma:sample1",
+   "source": "luma",
+   "title": "Sunday Run Club + Coffee",
+   "start": "2026-11-15T10:00",
+   "end": "2026-11-15T13:00",
+   "allDay": false,
+   "venue": "Tempelhofer Feld",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "luma:sample0",
+   "source": "luma",
+   "title": "Newcomers' Social Night – meet people in Berlin",
+   "start": "2026-11-15T19:00",
+   "end": "2026-11-15T22:00",
+   "allDay": false,
+   "venue": "Café in Mitte",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "eventbrite:sample2",
+   "source": "eventbrite",
+   "title": "Language Exchange & Drinks (DE/EN/ES)",
+   "start": "2026-11-15T19:00",
+   "end": "2026-11-15T22:00",
+   "allDay": false,
+   "venue": "Bar in Neukölln",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample5",
+   "source": "kulturdaten",
+   "title": "Vernissage: young photography",
+   "start": "2026-11-16T18:00",
+   "end": "2026-11-16T21:00",
+   "allDay": false,
+   "venue": "Gallery in Wedding",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "art"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "calendar:sample3",
+   "source": "calendar",
+   "title": "Board Game Night",
+   "start": "2026-11-16T19:00",
+   "end": "2026-11-16T22:00",
+   "allDay": false,
+   "venue": "Spielecafé Kreuzberg",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "eventbrite:sample4",
+   "source": "eventbrite",
+   "title": "Pub Quiz in English",
+   "start": "2026-11-16T20:00",
+   "end": "2026-11-16T23:00",
+   "allDay": false,
+   "venue": "Irish pub, Friedrichshain",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample8",
+   "source": "kulturdaten",
+   "title": "Free lunchtime concert",
+   "start": "2026-11-17T13:00",
+   "end": "2026-11-17T16:00",
+   "allDay": false,
+   "venue": "Philharmonie foyer",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "music"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample6",
+   "source": "kulturdaten",
+   "title": "Artist talk & guided tour",
+   "start": "2026-11-17T15:00",
+   "end": "2026-11-17T18:00",
+   "allDay": false,
+   "venue": "Museum in Tiergarten",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "talks",
+    "art"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "ticketmaster:sample7",
+   "source": "ticketmaster",
+   "title": "Indie band – Europe tour",
+   "start": "2026-11-17T20:00",
+   "end": "2026-11-17T23:00",
+   "allDay": false,
+   "venue": "Concert hall, Friedrichshain",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "music"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample11",
+   "source": "kulturdaten",
+   "title": "Reading: new Berlin fiction",
+   "start": "2026-11-18T19:00",
+   "end": "2026-11-18T22:00",
+   "allDay": false,
+   "venue": "Literaturhaus",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "talks"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "eventbrite:sample10",
+   "source": "eventbrite",
+   "title": "Stand-up comedy in English",
+   "start": "2026-11-18T20:00",
+   "end": "2026-11-18T23:00",
+   "allDay": false,
+   "venue": "Comedy club, Neukölln",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "stage"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "resident_advisor:sample9",
+   "source": "resident_advisor",
+   "title": "Club night: techno all night long",
+   "start": "2026-11-18T23:00",
+   "end": "2026-11-19T02:00",
+   "allDay": false,
+   "venue": "Club in Friedrichshain",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "nightlife"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "luma:sample12",
+   "source": "luma",
+   "title": "Founders & Friends Afterwork",
+   "start": "2026-11-19T18:00",
+   "end": "2026-11-19T21:00",
+   "allDay": false,
+   "venue": "Coworking space, Kreuzberg",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "eventbrite:sample13",
+   "source": "eventbrite",
+   "title": "Life-drawing session",
+   "start": "2026-11-19T18:00",
+   "end": "2026-11-19T21:00",
+   "allDay": false,
+   "venue": "Studio, Prenzlauer Berg",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "art",
+    "social"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "luma:sample14",
+   "source": "luma",
+   "title": "Newcomers' Social Night – meet people in Berlin",
+   "start": "2026-11-19T19:00",
+   "end": "2026-11-19T22:00",
+   "allDay": false,
+   "venue": "Café in Mitte",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "luma:sample15",
+   "source": "luma",
+   "title": "Sunday Run Club + Coffee",
+   "start": "2026-11-20T10:00",
+   "end": "2026-11-20T13:00",
+   "allDay": false,
+   "venue": "Tempelhofer Feld",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "eventbrite:sample16",
+   "source": "eventbrite",
+   "title": "Language Exchange & Drinks (DE/EN/ES)",
+   "start": "2026-11-20T19:00",
+   "end": "2026-11-20T22:00",
+   "allDay": false,
+   "venue": "Bar in Neukölln",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "calendar:sample17",
+   "source": "calendar",
+   "title": "Board Game Night",
+   "start": "2026-11-20T19:00",
+   "end": "2026-11-20T22:00",
+   "allDay": false,
+   "venue": "Spielecafé Kreuzberg",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample20",
+   "source": "kulturdaten",
+   "title": "Artist talk & guided tour",
+   "start": "2026-11-21T15:00",
+   "end": "2026-11-21T18:00",
+   "allDay": false,
+   "venue": "Museum in Tiergarten",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "talks",
+    "art"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample19",
+   "source": "kulturdaten",
+   "title": "Vernissage: young photography",
+   "start": "2026-11-21T18:00",
+   "end": "2026-11-21T21:00",
+   "allDay": false,
+   "venue": "Gallery in Wedding",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "art"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "eventbrite:sample18",
+   "source": "eventbrite",
+   "title": "Pub Quiz in English",
+   "start": "2026-11-21T20:00",
+   "end": "2026-11-21T23:00",
+   "allDay": false,
+   "venue": "Irish pub, Friedrichshain",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample22",
+   "source": "kulturdaten",
+   "title": "Free lunchtime concert",
+   "start": "2026-11-22T13:00",
+   "end": "2026-11-22T16:00",
+   "allDay": false,
+   "venue": "Philharmonie foyer",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "music"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "ticketmaster:sample21",
+   "source": "ticketmaster",
+   "title": "Indie band – Europe tour",
+   "start": "2026-11-22T20:00",
+   "end": "2026-11-22T23:00",
+   "allDay": false,
+   "venue": "Concert hall, Friedrichshain",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "music"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "resident_advisor:sample23",
+   "source": "resident_advisor",
+   "title": "Club night: techno all night long",
+   "start": "2026-11-22T23:00",
+   "end": "2026-11-23T02:00",
+   "allDay": false,
+   "venue": "Club in Friedrichshain",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "nightlife"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "luma:sample26",
+   "source": "luma",
+   "title": "Founders & Friends Afterwork",
+   "start": "2026-11-23T18:00",
+   "end": "2026-11-23T21:00",
+   "allDay": false,
+   "venue": "Coworking space, Kreuzberg",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample25",
+   "source": "kulturdaten",
+   "title": "Reading: new Berlin fiction",
+   "start": "2026-11-23T19:00",
+   "end": "2026-11-23T22:00",
+   "allDay": false,
+   "venue": "Literaturhaus",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "talks"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "eventbrite:sample24",
+   "source": "eventbrite",
+   "title": "Stand-up comedy in English",
+   "start": "2026-11-23T20:00",
+   "end": "2026-11-23T23:00",
+   "allDay": false,
+   "venue": "Comedy club, Neukölln",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "stage"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "luma:sample29",
+   "source": "luma",
+   "title": "Sunday Run Club + Coffee",
+   "start": "2026-11-24T10:00",
+   "end": "2026-11-24T13:00",
+   "allDay": false,
+   "venue": "Tempelhofer Feld",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "eventbrite:sample27",
+   "source": "eventbrite",
+   "title": "Life-drawing session",
+   "start": "2026-11-24T18:00",
+   "end": "2026-11-24T21:00",
+   "allDay": false,
+   "venue": "Studio, Prenzlauer Berg",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "art",
+    "social"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "luma:sample28",
+   "source": "luma",
+   "title": "Newcomers' Social Night – meet people in Berlin",
+   "start": "2026-11-24T19:00",
+   "end": "2026-11-24T22:00",
+   "allDay": false,
+   "venue": "Café in Mitte",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "eventbrite:sample30",
+   "source": "eventbrite",
+   "title": "Language Exchange & Drinks (DE/EN/ES)",
+   "start": "2026-11-25T19:00",
+   "end": "2026-11-25T22:00",
+   "allDay": false,
+   "venue": "Bar in Neukölln",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "calendar:sample31",
+   "source": "calendar",
+   "title": "Board Game Night",
+   "start": "2026-11-25T19:00",
+   "end": "2026-11-25T22:00",
+   "allDay": false,
+   "venue": "Spielecafé Kreuzberg",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "eventbrite:sample32",
+   "source": "eventbrite",
+   "title": "Pub Quiz in English",
+   "start": "2026-11-25T20:00",
+   "end": "2026-11-25T23:00",
+   "allDay": false,
+   "venue": "Irish pub, Friedrichshain",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "social"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample34",
+   "source": "kulturdaten",
+   "title": "Artist talk & guided tour",
+   "start": "2026-11-26T15:00",
+   "end": "2026-11-26T18:00",
+   "allDay": false,
+   "venue": "Museum in Tiergarten",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "talks",
+    "art"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample33",
+   "source": "kulturdaten",
+   "title": "Vernissage: young photography",
+   "start": "2026-11-26T18:00",
+   "end": "2026-11-26T21:00",
+   "allDay": false,
+   "venue": "Gallery in Wedding",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "art"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "ticketmaster:sample35",
+   "source": "ticketmaster",
+   "title": "Indie band – Europe tour",
+   "start": "2026-11-26T20:00",
+   "end": "2026-11-26T23:00",
+   "allDay": false,
+   "venue": "Concert hall, Friedrichshain",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "music"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample36",
+   "source": "kulturdaten",
+   "title": "Free lunchtime concert",
+   "start": "2026-11-27T13:00",
+   "end": "2026-11-27T16:00",
+   "allDay": false,
+   "venue": "Philharmonie foyer",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "music"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "eventbrite:sample38",
+   "source": "eventbrite",
+   "title": "Stand-up comedy in English",
+   "start": "2026-11-27T20:00",
+   "end": "2026-11-27T23:00",
+   "allDay": false,
+   "venue": "Comedy club, Neukölln",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "stage"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "resident_advisor:sample37",
+   "source": "resident_advisor",
+   "title": "Club night: techno all night long",
+   "start": "2026-11-27T23:00",
+   "end": "2026-11-28T02:00",
+   "allDay": false,
+   "venue": "Club in Friedrichshain",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "nightlife"
+   ],
+   "free": null,
+   "price": "from 12 EUR",
+   "description": "Sample event for previewing the layout."
+  },
+  {
+   "id": "kulturdaten:sample39",
+   "source": "kulturdaten",
+   "title": "Reading: new Berlin fiction",
+   "start": "2026-11-28T19:00",
+   "end": "2026-11-28T22:00",
+   "allDay": false,
+   "venue": "Literaturhaus",
+   "address": "",
+   "url": "https://example.org",
+   "image": "",
+   "categories": [
+    "talks"
+   ],
+   "free": true,
+   "price": "",
+   "description": "Sample event for previewing the layout."
+  }
+ ]
+}

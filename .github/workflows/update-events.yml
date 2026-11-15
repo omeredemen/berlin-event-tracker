@@ -1,0 +1,39 @@
+name: Update events
+
+on:
+  schedule:
+    - cron: "17 3,9,15,21 * * *"   # 4× a day (UTC)
+  workflow_dispatch:                 # "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-events
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Fetch events
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+        run: python fetcher/fetch_events.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "events-bot"
+          git config user.email "events-bot@users.noreply.github.com"
+          git add docs/events.json
+          git diff --cached --quiet || git commit -m "Update events $(date -u +'%Y-%m-%d %H:%M')"
+          git push

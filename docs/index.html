@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Berlin – what's on</title>
+<meta name="theme-color" content="#f4efe6">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23d2452c'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Georgia' font-style='italic'>B</text></svg>">
+<style>
+  :root {
+    --bg: #f4efe6; --paper: #fffdf8; --ink: #1d1b18; --muted: #6f685e; --line: #e2dacb;
+    --accent: #d2452c; --accent-soft: #fbe3dc;
+    --social: #d2452c; --art: #7b5ea7; --music: #1f7a6d; --nightlife: #2b2d6e;
+    --talks: #b07a12; --stage: #b23a74; --other: #7d7568;
+    --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161513; --paper: #201e1b; --ink: #f1ece3; --muted: #a59d90; --line: #34302a;
+      --accent: #ff6b4f; --accent-soft: #3a211b; --nightlife: #8c8ff0; --music: #4fbfae; --art: #b89be0;
+      --talks: #e0b04a; --stage: #e57cb0; --social: #ff6b4f; --other: #a59d90; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.45 ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  a { color: inherit; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px 80px; }
+
+  header { padding: 28px 0 10px; display: flex; align-items: end; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  h1 { font: 700 clamp(30px, 6vw, 44px)/1 Georgia, "Times New Roman", serif; letter-spacing: -0.02em; margin: 0; }
+  h1 em { color: var(--accent); font-style: italic; }
+  .meta { color: var(--muted); font-size: 13px; text-align: right; }
+  .meta button { all: unset; cursor: pointer; text-decoration: underline dotted; }
+
+  .tabs { display: flex; gap: 6px; margin: 14px 0 12px; border-bottom: 1px solid var(--line); }
+  .tab { all: unset; cursor: pointer; padding: 9px 4px; margin-right: 14px; font-weight: 600; color: var(--muted);
+    border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  .tab[aria-selected="true"] { color: var(--ink); border-color: var(--accent); }
+  .tab .count { font-weight: 500; font-size: 12px; background: var(--accent-soft); color: var(--accent);
+    padding: 1px 7px; border-radius: 99px; margin-left: 4px; }
+
+  .controls { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 8px 0 10px;
+    border-bottom: 1px solid var(--line); }
+  .row { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 3px 0; }
+  .row::-webkit-scrollbar { display: none; }
+  @media (min-width: 700px) { .row { flex-wrap: wrap; overflow: visible; } }
+  @media (max-width: 520px) { .meta { text-align: left; } }
+  .chip { all: unset; cursor: pointer; white-space: nowrap; padding: 6px 12px; border-radius: 99px;
+    border: 1px solid var(--line); background: var(--paper); font-size: 13.5px; display: inline-flex; align-items: center; gap: 6px; }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c, var(--other)); }
+  .chip:focus-visible, .tab:focus-visible, .icon:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .search { display: flex; gap: 8px; margin-top: 6px; }
+  .search input { flex: 1; min-width: 0; font: inherit; padding: 9px 12px; border-radius: 10px; border: 1px solid var(--line);
+    background: var(--paper); color: var(--ink); }
+
+  .summary { color: var(--muted); font-size: 13px; margin: 14px 0 4px; display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+  .summary button { all: unset; cursor: pointer; color: var(--accent); font-weight: 600; }
+
+  h2.day { font: 700 13px/1 ui-sans-serif, system-ui, sans-serif; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--muted); margin: 26px 0 8px; display: flex; gap: 8px; align-items: baseline; }
+  h2.day strong { color: var(--ink); font-size: 15px; letter-spacing: .02em; }
+
+  .card { display: grid; grid-template-columns: 58px 1fr auto; gap: 12px; background: var(--paper);
+    border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 12px 12px 14px; margin-bottom: 8px;
+    border-left: 4px solid var(--c, var(--other)); }
+  .card.hidden-ev { opacity: .45; }
+  .time { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 15px; padding-top: 1px; }
+  .time small { display: block; color: var(--muted); font-weight: 500; font-size: 12px; }
+  .title { font-weight: 650; font-size: 16px; line-height: 1.3; text-decoration: none; }
+  .title:hover { text-decoration: underline; }
+  .where { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
+  .desc { color: var(--muted); font-size: 13px; margin-top: 4px; display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden; }
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+  .tag { font-size: 11.5px; padding: 2px 8px; border-radius: 99px; background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
+  .tag.free { background: #e3f3e6; color: #1d6b33; border-color: #bfe3c7; font-weight: 600; }
+  .tag.new { background: var(--accent-soft); color: var(--accent); border-color: transparent; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { .tag.free { background: #18301e; color: #8ad79d; border-color: #24452c; } }
+  .actions { display: flex; flex-direction: column; gap: 4px; align-items: center; }
+  .icon { all: unset; cursor: pointer; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; color: var(--muted); }
+  .icon:hover { background: var(--bg); color: var(--ink); }
+  .icon.on { color: var(--accent); }
+  .icon svg { width: 19px; height: 19px; }
+
+  details.ongoing { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); margin-top: 14px; }
+  details.ongoing summary { cursor: pointer; padding: 12px 14px; font-weight: 600; }
+  details.ongoing .inner { padding: 0 10px 6px; }
+
+  .empty { text-align: center; color: var(--muted); padding: 50px 10px; }
+  .status { font-size: 12.5px; color: var(--muted); margin-top: 30px; border-top: 1px solid var(--line); padding-top: 12px; }
+  .status span { margin-right: 12px; white-space: nowrap; }
+  .ok::before, .bad::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 5px; background: #2f9e57; }
+  .bad::before { background: var(--accent); }
+
+  .menu { position: absolute; z-index: 20; background: var(--paper); border: 1px solid var(--line); border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.15); padding: 6px; min-width: 190px; }
+  .menu a, .menu button { all: unset; display: block; cursor: pointer; padding: 8px 10px; border-radius: 8px; font-size: 14px; }
+  .menu a:hover, .menu button:hover { background: var(--bg); }
+  @media (max-width: 520px) {
+    .card { grid-template-columns: 48px 1fr auto; gap: 9px; padding: 10px 8px 10px 11px; }
+    .title { font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Berlin, <em>what's on</em></h1>
+    <div class="meta" id="meta">Loading…</div>
+  </header>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-view="discover" aria-selected="true">Discover</button>
+    <button class="tab" role="tab" data-view="saved" aria-selected="false">My plan <span class="count" id="savedCount">0</span></button>
+  </div>
+
+  <div class="controls">
+    <div class="row" id="dateRow"></div>
+    <div class="row" id="catRow"></div>
+    <div class="row" id="flagRow"></div>
+    <div class="search"><input id="q" type="search" placeholder="Search title, venue, artist, neighbourhood…" autocomplete="off"></div>
+  </div>
+
+  <div class="summary"><span id="summary"></span><span id="summaryActions"></span></div>
+  <div id="ongoingSlot"></div>
+  <main id="list"></main>
+  <div class="status" id="status"></div>
+</div>
+
+<script>
+const CATS = {
+  social:    { label: "Social & meetups",      color: "var(--social)" },
+  art:       { label: "Art & exhibitions",     color: "var(--art)" },
+  music:     { label: "Concerts",              color: "var(--music)" },
+  nightlife: { label: "Clubs & nightlife",     color: "var(--nightlife)" },
+  talks:     { label: "Talks & workshops",     color: "var(--talks)" },
+  stage:     { label: "Theatre & comedy",      color: "var(--stage)" },
+  other:     { label: "Other",                 color: "var(--other)" },
+};
+const SOURCES = { luma: "Luma", kulturdaten: "kulturdaten.berlin", ticketmaster: "Ticketmaster",
+  resident_advisor: "Resident Advisor", eventbrite: "Eventbrite", calendar: "My calendars" };
+const DATES = [["today","Today"],["tomorrow","Tomorrow"],["weekend","This weekend"],["week","Next 7 days"],["all","Everything"]];
+
+// ---------- storage (fails soft) ----------
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("be:" + k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("be:" + k, JSON.stringify(v)); } catch {} },
+};
+const state = Object.assign({
+  view: "discover", date: "week", cats: [], free: false, onlyNew: false, showHidden: false, q: "",
+}, store.get("filters", {}), { q: "" });
+let saved = store.get("saved", {});       // id -> event snapshot
+let hidden = new Set(store.get("hidden", []));
+let seen = new Set(store.get("seen", []));
+const firstVisit = seen.size === 0;
+let DATA = { events: [] };
+
+// ---------- dates ----------
+const pad = n => String(n).padStart(2, "0");
+const ymd = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+const TODAY = new Date(); TODAY.setHours(0,0,0,0);
+const todayStr = ymd(TODAY);
+function range(key) {
+  if (key === "today") return [todayStr, todayStr];
+  if (key === "tomorrow") { const t = ymd(addDays(TODAY,1)); return [t, t]; }
+  if (key === "weekend") {
+    const dow = TODAY.getDay(); // 0 Sun … 6 Sat
+    if (dow === 0) return [todayStr, todayStr];
+    const fri = addDays(TODAY, (5 - dow + 7) % 7), sun = addDays(TODAY, 7 - dow);
+    return [dow >= 5 ? todayStr : ymd(fri), ymd(sun)];
+  }
+  if (key === "week") return [todayStr, ymd(addDays(TODAY, 6))];
+  return [todayStr, "9999-12-31"];
+}
+const startDay = e => e.start.slice(0,10);
+const endDay = e => (e.end && e.end.slice(0,10) > startDay(e)) ? e.end.slice(0,10) : startDay(e);
+const isOngoing = e => {  // long-running things like exhibitions
+  const days = (new Date(endDay(e)) - new Date(startDay(e))) / 864e5;
+  return days >= 2;
+};
+const dayLabel = s => {
+  if (s === todayStr) return ["Today", fmtDate(s)];
+  if (s === ymd(addDays(TODAY,1))) return ["Tomorrow", fmtDate(s)];
+  const d = new Date(s + "T12:00");
+  return [d.toLocaleDateString("en-GB", { weekday: "long" }), fmtDate(s)];
+};
+const fmtDate = s => new Date(s + "T12:00").toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+const timeOf = e => e.allDay ? "" : e.start.slice(11,16);
+
+// ---------- filtering ----------
+function matches(e, {ignoreDate = false} = {}) {
+  if (!state.showHidden && hidden.has(e.id)) return false;
+  if (state.cats.length && !e.categories.some(c => state.cats.includes(c))) return false;
+  if (state.free && e.free !== true) return false;
+  if (state.onlyNew && !isNew(e)) return false;
+  if (state.q) {
+    const hay = `${e.title} ${e.venue} ${e.address} ${e.area || ""} ${e.description} ${e.genre || ""}`.toLowerCase();
+    if (!state.q.toLowerCase().split(/\s+/).every(w => hay.includes(w))) return false;
+  }
+  if (!ignoreDate) {
+    const [a, b] = range(state.date);
+    if (endDay(e) < a || startDay(e) > b) return false;
+  }
+  if (endDay(e) < todayStr) return false;
+  // drop things that already finished earlier today
+  if (!e.allDay && startDay(e) === todayStr) {
+    const finish = e.end && e.end > e.start ? e.end : plusHours(e.start, 3);
+    if (finish < NOW) return false;
+  }
+  return true;
+}
+const NOW = (() => { const d = new Date(); return `${ymd(d)}T${pad(d.getHours())}:${pad(d.getMinutes())}`; })();
+const isNew = e => !firstVisit && !seen.has(e.id);
+
+// ---------- rendering ----------
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+const ICON = {
+  star: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>',
+  starOn: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>',
+  more: '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg>',
+};
+
+function chips() {
+  $("#dateRow").innerHTML = DATES.map(([k, l]) =>
+    `<button class="chip" data-date="${k}" aria-pressed="${state.date === k}">${l}</button>`).join("");
+  $("#catRow").innerHTML = Object.entries(CATS).map(([k, c]) =>
+    `<button class="chip" data-cat="${k}" style="--c:${c.color}" aria-pressed="${state.cats.includes(k)}"><span class="dot"></span>${c.label}</button>`).join("");
+  $("#flagRow").innerHTML =
+    `<button class="chip" data-flag="free" aria-pressed="${state.free}">Free only</button>` +
+    (firstVisit ? "" : `<button class="chip" data-flag="onlyNew" aria-pressed="${state.onlyNew}">New since last visit</button>`) +
+    `<button class="chip" data-flag="showHidden" aria-pressed="${state.showHidden}">Show hidden</button>`;
+  const dc = $("#dateRow"); dc.style.display = state.view === "saved" ? "none" : "";
+}
+
+function card(e) {
+  const main = e.categories[0] || "other";
+  const where = [e.venue, e.area].filter(Boolean).join(" · ");
+  const tags = [];
+  if (isNew(e)) tags.push('<span class="tag new">New</span>');
+  if (e.free === true) tags.push('<span class="tag free">Free</span>');
+  else if (e.price) tags.push(`<span class="tag">${esc(e.price)}</span>`);
+  e.categories.forEach(c => tags.push(`<span class="tag">${esc(CATS[c]?.label || c)}</span>`));
+  if (e.going) tags.push(`<span class="tag">${e.going} going</span>`);
+  tags.push(`<span class="tag">${esc(SOURCES[e.source] || e.source)}${e.alsoOn ? " +" + e.alsoOn.length : ""}</span>`);
+  const ongoing = isOngoing(e);
+  const t = ongoing ? `<small>until</small>${fmtDate(endDay(e))}` : (timeOf(e) || "<small>all day</small>");
+  const s = !!saved[e.id];
+  return `<article class="card ${hidden.has(e.id) ? "hidden-ev" : ""}" style="--c:${CATS[main]?.color}">
+    <div class="time">${t}</div>
+    <div>
+      <a class="title" href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>
+      ${where ? `<div class="where">${esc(where)}</div>` : ""}
+      ${e.description ? `<div class="desc">${esc(e.description)}</div>` : ""}
+      <div class="tags">${tags.join("")}</div>
+    </div>
+    <div class="actions">
+      <button class="icon ${s ? "on" : ""}" data-save="${esc(e.id)}" aria-label="${s ? "Remove from my plan" : "Save to my plan"}" title="${s ? "Saved" : "Save"}">${s ? ICON.starOn : ICON.star}</button>
+      <button class="icon" data-more="${esc(e.id)}" aria-label="More actions" title="Calendar, hide…">${ICON.more}</button>
+    </div>
+  </article>`;
+}
+
+function render() {
+  store.set("filters", { view: state.view, date: state.date, cats: state.cats, free: state.free, onlyNew: state.onlyNew, showHidden: state.showHidden });
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.view === state.view));
+  $("#savedCount").textContent = Object.keys(saved).length;
+  chips();
+
+  let pool;
+  if (state.view === "saved") {
+    // prefer fresh data, fall back to the snapshot taken when saving
+    const byId = Object.fromEntries(DATA.events.map(e => [e.id, e]));
+    pool = Object.values(saved).map(s => byId[s.id] || s).filter(e => matches(e, { ignoreDate: true }));
+  } else {
+    pool = DATA.events.filter(e => matches(e));
+  }
+
+  const ongoing = state.view === "discover" ? pool.filter(isOngoing) : [];
+  const dated = state.view === "discover" ? pool.filter(e => !isOngoing(e)) : pool;
+  dated.sort((a, b) => (a.start < b.start ? -1 : a.start > b.start ? 1 : 0));
+
+  const groups = new Map();
+  for (const e of dated) {
+    const d = startDay(e) < todayStr ? todayStr : startDay(e);
+    if (!groups.has(d)) groups.set(d, []);
+    groups.get(d).push(e);
+  }
+  let html = "";
+  for (const [d, evs] of groups) {
+    const [big, small] = dayLabel(d);
+    html += `<h2 class="day"><strong>${big}</strong> ${small} · ${evs.length}</h2>` + evs.map(card).join("");
+  }
+  $("#list").innerHTML = html || `<div class="empty">${state.view === "saved"
+    ? "Nothing saved yet. Tap the ☆ on any event to add it to your plan."
+    : "No events match these filters. Try a wider date range or fewer categories."}</div>`;
+
+  $("#ongoingSlot").innerHTML = ongoing.length
+    ? `<details class="ongoing"><summary>Ongoing exhibitions & multi-day events · ${ongoing.length}</summary><div class="inner">${
+        ongoing.sort((a,b) => endDay(a) < endDay(b) ? -1 : 1).map(card).join("")}</div></details>` : "";
+
+  const n = dated.length + ongoing.length;
+  $("#summary").textContent = state.view === "saved"
+    ? `${n} saved event${n === 1 ? "" : "s"}`
+    : `${n} event${n === 1 ? "" : "s"}${state.cats.length ? " in " + state.cats.map(c => CATS[c].label).join(", ") : ""}`;
+  $("#summaryActions").innerHTML = state.view === "saved" && n
+    ? `<button id="exportPlan">Download plan as calendar file</button>`
+    : (state.cats.length || state.free || state.q || state.onlyNew ? `<button id="reset">Clear filters</button>` : "");
+}
+
+// ---------- calendar export ----------
+const icsDate = s => s.replace(/[-:]/g, "") + "00";
+function plusHours(s, h) { const d = new Date(s); d.setHours(d.getHours() + h);
+  return `${ymd(d)}T${pad(d.getHours())}:${pad(d.getMinutes())}`; }
+function icsEvent(e) {
+  const end = e.end && e.end > e.start ? e.end : plusHours(e.start, 2);
+  const txt = s => String(s || "").replace(/\\/g, "\\\\").replace(/([,;])/g, "\\$1").replace(/\n/g, "\\n");
+  const lines = ["BEGIN:VEVENT", `UID:${txt(e.id)}@berlin-events`, `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").slice(0,15)}Z`];
+  if (e.allDay) { lines.push(`DTSTART;VALUE=DATE:${e.start.slice(0,10).replace(/-/g,"")}`); }
+  else { lines.push(`DTSTART;TZID=Europe/Berlin:${icsDate(e.start)}`, `DTEND;TZID=Europe/Berlin:${icsDate(end)}`); }
+  lines.push(`SUMMARY:${txt(e.title)}`, `LOCATION:${txt([e.venue, e.address].filter(Boolean).join(", "))}`,
+    `URL:${e.url}`, `DESCRIPTION:${txt((e.description ? e.description + "\n\n" : "") + e.url)}`, "END:VEVENT");
+  return lines.join("\r\n");
+}
+function downloadIcs(events, name) {
+  const body = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//berlin-events//EN", ...events.map(icsEvent), "END:VCALENDAR"].join("\r\n");
+  const a = Object.assign(document.createElement("a"), {
+    href: URL.createObjectURL(new Blob([body], { type: "text/calendar" })), download: name });
+  document.body.appendChild(a); a.click(); a.remove();
+}
+function googleLink(e) {
+  const end = e.end && e.end > e.start ? e.end : plusHours(e.start, 2);
+  const dates = e.allDay ? `${e.start.slice(0,10).replace(/-/g,"")}/${ymd(addDays(new Date(e.start.slice(0,10)+"T12:00"),1)).replace(/-/g,"")}`
+                         : `${icsDate(e.start)}/${icsDate(end)}`;
+  const p = new URLSearchParams({ action: "TEMPLATE", text: e.title, dates, ctz: "Europe/Berlin",
+    location: [e.venue, e.address].filter(Boolean).join(", "), details: e.url });
+  return "https://calendar.google.com/calendar/render?" + p;
+}
+
+// ---------- events ----------
+const findEvent = id => DATA.events.find(e => e.id === id) || saved[id];
+function closeMenu() { document.querySelector(".menu")?.remove(); }
+function openMenu(btn, e) {
+  closeMenu();
+  const m = document.createElement("div"); m.className = "menu";
+  m.innerHTML = `<a href="${esc(googleLink(e))}" target="_blank" rel="noopener">Add to Google Calendar</a>
+    <button data-act="ics">Download for Apple / Outlook</button>
+    <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([e.venue, e.address, "Berlin"].filter(Boolean).join(", "))}" target="_blank" rel="noopener">Open in maps</a>
+    ${(e.alsoOn || []).map(o => `<a href="${esc(o.url)}" target="_blank" rel="noopener">Also on ${esc(SOURCES[o.source] || o.source)}</a>`).join("")}
+    <button data-act="hide">${hidden.has(e.id) ? "Unhide" : "Not interested – hide"}</button>`;
+  document.body.appendChild(m);
+  const r = btn.getBoundingClientRect();
+  m.style.top = `${window.scrollY + r.bottom + 4}px`;
+  m.style.left = `${Math.max(8, Math.min(window.scrollX + r.right - m.offsetWidth, document.documentElement.clientWidth - m.offsetWidth - 8))}px`;
+  m.addEventListener("click", ev => {
+    const act = ev.target.dataset.act;
+    if (act === "ics") downloadIcs([e], e.title.replace(/[^\w]+/g, "-").slice(0, 40) + ".ics");
+    if (act === "hide") { hidden.has(e.id) ? hidden.delete(e.id) : hidden.add(e.id); store.set("hidden", [...hidden]); render(); }
+    closeMenu();
+  });
+}
+
+document.addEventListener("click", ev => {
+  const t = ev.target.closest("button, a");
+  if (!ev.target.closest(".menu") && !ev.target.closest("[data-more]")) closeMenu();
+  if (!t) return;
+  if (t.dataset.view) { state.view = t.dataset.view; render(); }
+  else if (t.dataset.date) { state.date = t.dataset.date; render(); }
+  else if (t.dataset.cat) { const c = t.dataset.cat;
+    state.cats = state.cats.includes(c) ? state.cats.filter(x => x !== c) : [...state.cats, c]; render(); }
+  else if (t.dataset.flag) { state[t.dataset.flag] = !state[t.dataset.flag]; render(); }
+  else if (t.dataset.save) { const id = t.dataset.save;
+    if (saved[id]) delete saved[id]; else saved[id] = findEvent(id);
+    store.set("saved", saved); render(); }
+  else if (t.dataset.more) { openMenu(t, findEvent(t.dataset.more)); }
+  else if (t.id === "reset") { Object.assign(state, { cats: [], free: false, q: "", onlyNew: false }); $("#q").value = ""; render(); }
+  else if (t.id === "exportPlan") { downloadIcs(Object.values(saved).filter(e => endDay(e) >= todayStr), "my-berlin-plan.ics"); }
+  else if (t.id === "refresh") { load(true); }
+});
+let qTimer; $("#q").addEventListener("input", e => { clearTimeout(qTimer); qTimer = setTimeout(() => { state.q = e.target.value.trim(); render(); }, 120); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
+
+// ---------- load ----------
+async function load(bust) {
+  try {
+    const res = await fetch("events.json" + (bust ? "?t=" + Date.now() : ""), { cache: bust ? "no-store" : "default" });
+    DATA = await res.json();
+  } catch (err) {
+    $("#meta").textContent = "Couldn't load events.json – has the fetcher run yet?";
+    return;
+  }
+  const up = DATA.updated ? new Date(DATA.updated) : null;
+  $("#meta").innerHTML = `${DATA.events.length} upcoming events<br>updated ${up ? up.toLocaleString("en-GB", { weekday: "short", hour: "2-digit", minute: "2-digit" }) : "?"} · <button id="refresh">refresh</button>`;
+  if (DATA.sample) $("#ongoingSlot").insertAdjacentHTML("beforebegin",
+    `<div class="tag new" style="display:block;margin-top:12px;padding:8px 12px;border-radius:10px">Sample data – real events appear after the fetcher runs for the first time.</div>`);
+  $("#status").innerHTML = "Sources: " + Object.entries(DATA.sources || {}).map(([k, s]) =>
+    `<span class="${s.ok ? "ok" : "bad"}" title="${esc(s.error || "")}">${esc(SOURCES[k] || k)} ${s.count}</span>`).join("");
+  render();
+  // remember what you've seen, so next visit can flag what's new
+  const ids = DATA.events.map(e => e.id);
+  setTimeout(() => store.set("seen", [...new Set([...seen, ...ids])].slice(-20000)), 1500);
+  // forget saved events that ended more than 2 weeks ago
+  const cutoff = ymd(addDays(TODAY, -14));
+  let changed = false;
+  for (const [id, e] of Object.entries(saved)) if (e && endDay(e) < cutoff) { delete saved[id]; changed = true; }
+  if (changed) store.set("saved", saved);
+}
+load();
+</script>
+</body>
+</html>

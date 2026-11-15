@@ -1,0 +1,52 @@
+{
+  "days_ahead": 30,
+
+  "sources": {
+    "calendar": true,
+    "luma": true,
+    "kulturdaten": true,
+    "ticketmaster": true,
+    "resident_advisor": true,
+    "eventbrite": true
+  },
+
+  "kulturdaten": {
+    "skip_tags": ["Police", "Children", "Health", "Seniors", "Education", "WeeklyMarkets"]
+  },
+
+  "luma": {
+    "place_id": "discplace-gCfX0s3E9Hgo3rG",
+    "max_pages": 10
+  },
+
+  "resident_advisor": {
+    "area_id": 34,
+    "days_ahead": 14,
+    "max_pages": 30
+  },
+
+  "eventbrite": {
+    "pages_per_search": 3,
+    "pages": {
+      "free--events": [],
+      "networking": ["social"],
+      "social-activities--events": ["social"],
+      "arts--events": ["art"],
+      "music--events": ["music"]
+    }
+  },
+
+  "ical_feeds": [
+    {
+      "name": "Example: a Meetup group you like",
+      "url": "https://www.meetup.com/REPLACE-WITH-GROUP-NAME/events/ical/",
+      "categories": ["social"]
+    },
+    {
+      "name": "Example: a gallery or venue calendar",
+      "url": "https://REPLACE-WITH-CALENDAR-URL.ics",
+      "categories": ["art"],
+      "free": true
+    }
+  ]
+}
