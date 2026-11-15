@@ -80,5 +80,6 @@ Some sites block GitHub's servers but not home internet connections. If a source
 
 - How far ahead to look: `days_ahead` in `config.json` (default 30)
 - Turn a source off: set it to `false` under `sources`
+- kulturdaten service listings (homework help, police advice, senior help desks…): `kulturdaten.skip_tags`. Set it to `[]` to keep everything
 - Eventbrite categories: edit `eventbrite.pages`. The keys are the URL parts of Eventbrite search pages, e.g. `https://www.eventbrite.de/d/germany--berlin/networking/` → `networking`
 - How events get sorted into categories: the keyword lists in `fetcher/common.py`

@@ -2,7 +2,7 @@ name: Update events
 
 on:
   schedule:
-    - cron: "17 3,9,15,21 * * *"   # 4× a day (UTC)
+    - cron: "17 3,9,15,21 * * *"   # 4x a day (UTC): 04:17, 10:17, 16:17, 22:17 Berlin winter time
   workflow_dispatch:                 # "Run workflow" button in the Actions tab
 
 permissions:
