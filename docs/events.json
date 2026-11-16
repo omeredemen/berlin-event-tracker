@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T02:04+01:00",
+ "updated": "2026-11-16T12:26+01:00",
  "window": {
   "from": "2026-11-16",
   "to": "2026-12-16"
@@ -11,7 +11,7 @@
   },
   "luma": {
    "ok": true,
-   "count": 55
+   "count": 54
   },
   "kulturdaten": {
    "ok": true,
@@ -23,7 +23,7 @@
   },
   "resident_advisor": {
    "ok": true,
-   "count": 465
+   "count": 469
   },
   "eventbrite": {
    "ok": false,
@@ -1952,7 +1952,7 @@
    "free": true,
    "price": "",
    "description": "Hosted by BRISA",
-   "going": 33
+   "going": 35
   },
   {
    "id": "kulturdaten:E_7BH5LPXEW71L",
@@ -2051,7 +2051,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 1
+   "going": 2
   },
   {
    "id": "resident_advisor:2561313",
@@ -2071,7 +2071,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 70
+   "going": 76
   },
   {
    "id": "kulturdaten:E_2XFNC9KM6L9Z",
@@ -2170,7 +2170,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Frankie Flowerz, Ricardo Rodriguez",
-   "going": 21
+   "going": 28
   },
   {
    "id": "resident_advisor:2564586",
@@ -2190,7 +2190,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Yazzus, Mohajer, BLACK ANTHEM RESTORE, YONG YING",
-   "going": 187
+   "going": 203
   },
   {
    "id": "kulturdaten:E_FGD8FSGE86PT",
@@ -4578,7 +4578,7 @@
    "free": true,
    "price": "",
    "description": "Hosted by Ixdf Berlin (interaction-design.org)",
-   "going": 604
+   "going": 603
   },
   {
    "id": "kulturdaten:E_9ZGYHZZY2MXF",
@@ -4686,7 +4686,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Lars Löffler, Domovnika, peak2soon",
-   "going": 3
+   "going": 4
   },
   {
    "id": "kulturdaten:E_7SQZ7T2YTBJK",
@@ -5028,7 +5028,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 6
+   "going": 9
   },
   {
    "id": "kulturdaten:E_3MLP6M8CQGMQ",
@@ -5125,7 +5125,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Umami Sound",
-   "going": 21
+   "going": 22
   },
   {
    "id": "resident_advisor:2576879",
@@ -5145,7 +5145,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Darren Black, .Cheka, PERT",
-   "going": 10
+   "going": 11
   },
   {
    "id": "resident_advisor:2538520",
@@ -5165,7 +5165,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Felix Reichelt, DarK LiZZ",
-   "going": 85
+   "going": 91
   },
   {
    "id": "resident_advisor:2564616",
@@ -5185,7 +5185,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Gary Beck, BLACK ANTHEM RESTORE, Irakli, SIMA",
-   "going": 421
+   "going": 466
   },
   {
    "id": "kulturdaten:E_T8PPFPPP394X",
@@ -7635,7 +7635,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: ANNARA, DJ Trade Trainer, SXCL, MADAKYA",
-   "going": 18
+   "going": 19
   },
   {
    "id": "kulturdaten:E_AQLJL9JTYACD",
@@ -7809,7 +7809,7 @@
    "free": true,
    "price": "",
    "description": "Hosted by Personal",
-   "going": 38
+   "going": 49
   },
   {
    "id": "kulturdaten:E_JZFJ42Y8NB5C",
@@ -7925,7 +7925,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Anja Schneider, Milena Adamis, Anna Amato, Steven Shade",
-   "going": 32
+   "going": 34
   },
   {
    "id": "resident_advisor:2550671",
@@ -7945,7 +7945,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Electrosexual",
-   "going": 30
+   "going": 31
   },
   {
    "id": "resident_advisor:2574731",
@@ -7965,7 +7965,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 3
+   "going": 4
   },
   {
    "id": "kulturdaten:E_78MZXSHLQ8BQ",
@@ -8104,7 +8104,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 61
+   "going": 63
   },
   {
    "id": "resident_advisor:2580507",
@@ -8123,7 +8123,8 @@
    ],
    "free": null,
    "price": "",
-   "description": ""
+   "description": "",
+   "going": 1
   },
   {
    "id": "resident_advisor:2577566",
@@ -8262,7 +8263,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Trancemaster Krause",
-   "going": 275
+   "going": 282
   },
   {
    "id": "resident_advisor:2568625",
@@ -8282,12 +8283,12 @@
    "free": null,
    "price": "",
    "description": "Line-up: DJ Jordan, Flakka (2), Miss Pin, Kjar",
-   "going": 22
+   "going": 23
   },
   {
    "id": "resident_advisor:2518129",
    "source": "resident_advisor",
-   "title": "TECHNO MITTWOCH",
+   "title": "TECHNO MITTWOCH: TAKE YOUR FREE TICKETS",
    "start": "2026-11-18T23:00",
    "end": "2026-11-19T07:00",
    "allDay": false,
@@ -8302,7 +8303,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: PETDuo, Viktor Kampf, nixmoon, Molis, Wes (NL), André Skuda",
-   "going": 349
+   "going": 353
   },
   {
    "id": "resident_advisor:2550781",
@@ -8322,7 +8323,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Adriano., DAHRAXT, KEROSENE (ZA), Miss Italia",
-   "going": 31
+   "going": 32
   },
   {
    "id": "resident_advisor:2574170",
@@ -8342,7 +8343,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: KLOE, Sinesthesia, Stom, VNVK",
-   "going": 316
+   "going": 317
   },
   {
    "id": "kulturdaten:E_CKEDPG7TKS6T",
@@ -10753,7 +10754,7 @@
    "free": true,
    "price": "",
    "description": "Hosted by Silicon Allee x Fraunhofer HHI",
-   "going": 170
+   "going": 263
   },
   {
    "id": "luma:evt-wX342MpmiOzlgsr",
@@ -11035,7 +11036,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Rolex3k, Mambo Kahn",
-   "going": 44
+   "going": 50
   },
   {
    "id": "kulturdaten:E_YRSGGWL5TC2H",
@@ -11198,7 +11199,7 @@
    "free": true,
    "price": "",
    "description": "Hosted by Personal",
-   "going": 125
+   "going": 128
   },
   {
    "id": "resident_advisor:2510649",
@@ -11414,7 +11415,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Julion De'Angelo",
-   "going": 13
+   "going": 17
   },
   {
    "id": "kulturdaten:E_RDL6DRFSR2T5",
@@ -11454,7 +11455,8 @@
    ],
    "free": null,
    "price": "",
-   "description": "Line-up: Felicity Mangan"
+   "description": "Line-up: Felicity Mangan",
+   "going": 1
   },
   {
    "id": "kulturdaten:E_FL3QMP6RR34G",
@@ -11690,7 +11692,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 3
+   "going": 4
   },
   {
    "id": "kulturdaten:E_Z3BNWPY8GMZ3",
@@ -11889,7 +11891,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: PsyCare, Unfunk, James Love",
-   "going": 5
+   "going": 6
   },
   {
    "id": "resident_advisor:2569575",
@@ -11971,7 +11973,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 853
+   "going": 862
   },
   {
    "id": "kulturdaten:E_DPCGBRLLQM2W",
@@ -12017,7 +12019,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Nikklaas",
-   "going": 40
+   "going": 41
   },
   {
    "id": "resident_advisor:2568734",
@@ -12057,7 +12059,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Innersha, Abo Abo, Marco Maldarella, Seta Loto, Marie Midori, vp allowed",
-   "going": 116
+   "going": 121
   },
   {
    "id": "resident_advisor:2347109",
@@ -12077,7 +12079,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Rrose",
-   "going": 241
+   "going": 243
   },
   {
    "id": "resident_advisor:2575090",
@@ -12137,7 +12139,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: ØTTA, SALOME, TINKERHELL",
-   "going": 99
+   "going": 103
   },
   {
    "id": "resident_advisor:2569641",
@@ -12157,7 +12159,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Lukr Range, WAN.1, TAUBE",
-   "going": 101
+   "going": 122
   },
   {
    "id": "resident_advisor:2538740",
@@ -12177,7 +12179,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 7
+   "going": 8
   },
   {
    "id": "resident_advisor:2571743",
@@ -12197,7 +12199,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Ancut, Anderson (US), Bee Lincoln, Coco, Didier Dlb, Edgar Peng",
-   "going": 67,
+   "going": 71,
    "alsoOn": [
     {
      "source": "resident_advisor",
@@ -12231,7 +12233,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: James Lotion, elliephunk, materia hache",
-   "going": 33
+   "going": 34
   },
   {
    "id": "resident_advisor:2570270",
@@ -14963,7 +14965,7 @@
    "free": true,
    "price": "",
    "description": "Hosted by Co-Learning Club",
-   "going": 134
+   "going": 139
   },
   {
    "id": "kulturdaten:E_GM5DZ4AHTJ7B",
@@ -15052,7 +15054,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: alizé.e, Triqi",
-   "going": 123
+   "going": 128
   },
   {
    "id": "kulturdaten:E_ZL5RQ64TQXSJ",
@@ -15091,27 +15093,6 @@
    "free": true,
    "price": "",
    "description": "Es spielen Schülerinnen und Schüler der Fachgruppe Tasteninstrumente"
-  },
-  {
-   "id": "resident_advisor:2575778",
-   "source": "resident_advisor",
-   "title": "FCK APPS. MAKE FRIENDS OFFLINE",
-   "start": "2026-11-20T19:00",
-   "end": "2026-11-20T22:00",
-   "allDay": false,
-   "venue": "Urbayn Berlin",
-   "address": "",
-   "url": "https://ra.co/events/2575778",
-   "image": "",
-   "categories": [
-    "nightlife",
-    "music",
-    "social"
-   ],
-   "free": null,
-   "price": "",
-   "description": "",
-   "going": 2
   },
   {
    "id": "resident_advisor:2539138",
@@ -15189,7 +15170,27 @@
    "free": null,
    "price": "",
    "description": "Line-up: Mauricio Fleury",
-   "going": 5
+   "going": 6
+  },
+  {
+   "id": "resident_advisor:2575778",
+   "source": "resident_advisor",
+   "title": "No Event (Cancelled)",
+   "start": "2026-11-20T19:00",
+   "end": "2026-11-20T22:00",
+   "allDay": false,
+   "venue": "Urbayn Berlin",
+   "address": "",
+   "url": "https://ra.co/events/2575778",
+   "image": "",
+   "categories": [
+    "nightlife",
+    "music"
+   ],
+   "free": null,
+   "price": "",
+   "description": "",
+   "going": 2
   },
   {
    "id": "kulturdaten:E_FJL4715QQLBJ",
@@ -15307,7 +15308,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 89
+   "going": 91
   },
   {
    "id": "resident_advisor:2438329",
@@ -15486,7 +15487,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 33
+   "going": 34
   },
   {
    "id": "resident_advisor:2584768",
@@ -15525,7 +15526,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Chris Zippel, Der Loth",
-   "going": 31
+   "going": 33
   },
   {
    "id": "resident_advisor:2583706",
@@ -15626,6 +15627,26 @@
    "description": ""
   },
   {
+   "id": "resident_advisor:2585481",
+   "source": "resident_advisor",
+   "title": "Tausend House: Shabi",
+   "start": "2026-11-20T21:00",
+   "end": "2026-11-21T03:00",
+   "allDay": false,
+   "venue": "Tausend",
+   "address": "",
+   "url": "https://ra.co/events/2585481",
+   "image": "",
+   "categories": [
+    "nightlife",
+    "music"
+   ],
+   "free": null,
+   "price": "",
+   "description": "Line-up: Shabi",
+   "going": 2
+  },
+  {
    "id": "resident_advisor:2553293",
    "source": "resident_advisor",
    "title": "8 YEARS Keyi Magazine x OXI",
@@ -15643,7 +15664,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Regal, Matrixxman, bbecks, Eyesdice, DJ T-1000, Ultra Instincts",
-   "going": 82
+   "going": 86
   },
   {
    "id": "resident_advisor:2578620",
@@ -15703,7 +15724,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 8
+   "going": 9
   },
   {
    "id": "resident_advisor:2328178",
@@ -15743,7 +15764,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: CATAWR, Pilar Jordan, ONNI, Emir Kaynak, Thomas Haak",
-   "going": 1
+   "going": 2
   },
   {
    "id": "resident_advisor:2582144",
@@ -15763,7 +15784,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 89
+   "going": 94
   },
   {
    "id": "resident_advisor:2540006",
@@ -15823,7 +15844,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Aio, Bonnie Spacey, Konfusia, Maurice Mino, Taberia, Naicet",
-   "going": 697
+   "going": 719
   },
   {
    "id": "resident_advisor:2543874",
@@ -15843,7 +15864,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Darwin, DJ Storm (2), Esposito, Mala, Carl Luis, Ila Brugal",
-   "going": 253
+   "going": 256
   },
   {
    "id": "resident_advisor:2521007",
@@ -15863,7 +15884,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Chris Imler, Kinzua, Amelia Holt, Alessandro Adriani, André Pahl, An-i",
-   "going": 751
+   "going": 767
   },
   {
    "id": "resident_advisor:2582148",
@@ -15903,7 +15924,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Vilhell, Enea Lu, Kalimanda",
-   "going": 3
+   "going": 4
   },
   {
    "id": "resident_advisor:2536128",
@@ -16003,7 +16024,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Phonique, Misha Svirid, Anna Belove",
-   "going": 3
+   "going": 4
   },
   {
    "id": "resident_advisor:2488784",
@@ -16103,7 +16124,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Part-Time Lesbian, ZANNT, VRTL, ANNARA, sleazy",
-   "going": 37
+   "going": 41
   },
   {
    "id": "resident_advisor:2529000",
@@ -16123,7 +16144,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: TANZBAER, DJ Jetset, Zukunftsfritze, Megaira, DJ Hotcue, Patchy",
-   "going": 209
+   "going": 212
   },
   {
    "id": "resident_advisor:2565479",
@@ -16143,7 +16164,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Club Jerome, Delavas",
-   "going": 26
+   "going": 27
   },
   {
    "id": "resident_advisor:2554129",
@@ -16183,7 +16204,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Hegemeister, L.OST, NDNG",
-   "going": 51
+   "going": 52
   },
   {
    "id": "resident_advisor:2580917",
@@ -16203,7 +16224,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: .Cheka, ALIS., TRIS",
-   "going": 13
+   "going": 14
   },
   {
    "id": "resident_advisor:2578110",
@@ -16243,7 +16264,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Seba, Upzet, Dirty Plates, CainDNB, Shaded Lines, MARIE.MOON",
-   "going": 43
+   "going": 44
   },
   {
    "id": "resident_advisor:2572001",
@@ -16264,7 +16285,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Olga Korol, Ferdinand Kremer",
-   "going": 57
+   "going": 58
   },
   {
    "id": "resident_advisor:2562363",
@@ -16304,7 +16325,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Paraçek, two girls one mom, HANÀ, KARISH, CARGO (DE), Bruno Brero",
-   "going": 1105
+   "going": 1131
   },
   {
    "id": "resident_advisor:2331934",
@@ -16324,7 +16345,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Cara Elizabeth, Elotrance, SATYS FYRE, Alba Franch, The Muffin Man, ELOISA",
-   "going": 372
+   "going": 382
   },
   {
    "id": "resident_advisor:2576293",
@@ -16344,7 +16365,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Ben Derris, Linus Villa, Carotin, DJ.Egoshooter10000, Krash Cora, Alina Viktoria",
-   "going": 64
+   "going": 66
   },
   {
    "id": "resident_advisor:2487279",
@@ -16364,7 +16385,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Answer Code Request, CEM, Deano, Deetron, Tasha, DJ TOOL",
-   "going": 1170,
+   "going": 1193,
    "alsoOn": [
     {
      "source": "resident_advisor",
@@ -16394,7 +16415,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: INTOX, Refl3ction, Popsen, L X S",
-   "going": 246
+   "going": 248
   },
   {
    "id": "resident_advisor:2573053",
@@ -16434,7 +16455,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Giulia Gutterer, GRETA (GR), Kidcat, Lucas Abadi, Sparkly Pony, ilbroccolovolante",
-   "going": 97
+   "going": 99
   },
   {
    "id": "resident_advisor:2570275",
@@ -16473,8 +16494,8 @@
    ],
    "free": null,
    "price": "",
-   "description": "Line-up: DJ Hitwave, peak2soon, Andeel, pink-panther, d4ia, VEGANICECREAM",
-   "going": 324,
+   "description": "Line-up: DJ Hitwave, BROMAN-C, peak2soon, Andeel, pink-panther, d4ia",
+   "going": 325,
    "alsoOn": [
     {
      "source": "resident_advisor",
@@ -16540,7 +16561,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Annina, Jack Clark, Rangø, grey.ish, vinsk.",
-   "going": 21
+   "going": 23
   },
   {
    "id": "resident_advisor:2579341",
@@ -16560,7 +16581,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Denno Matini, NAIR (IN), Dj OmarO, Emilion Dollar Baby, Kazuki Takahashi",
-   "going": 2
+   "going": 8
   },
   {
    "id": "resident_advisor:2573233",
@@ -17930,7 +17951,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Novo Line, DJ Primitivo, Rachel Opert, Alexander Arpeggio, Osterinsel",
-   "going": 13
+   "going": 14
   },
   {
    "id": "kulturdaten:E_NW27THTX8545",
@@ -18454,7 +18475,7 @@
    ],
    "free": null,
    "price": "",
-   "description": "Line-up: John Loveless, MLE (2), Space Drum Meditation, IDA, Esterne Moog, Mandel",
+   "description": "Line-up: John Loveless, MLE (UK), Space Drum Meditation, IDA, Esterne Moog, Mandel",
    "going": 134
   },
   {
@@ -18653,7 +18674,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Fasme, SORAYA*, Pino Peña, MATHILDA (2), Hanna Baertig, DJ ZBB",
-   "going": 75,
+   "going": 76,
    "alsoOn": [
     {
      "source": "resident_advisor",
@@ -18903,7 +18924,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Appleblim, Beatrice M., Peverelist, Chloe Lula, gyrofield, Nídia",
-   "going": 1061
+   "going": 1069
   },
   {
    "id": "resident_advisor:2458684",
@@ -18923,7 +18944,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Township Rebellion",
-   "going": 462
+   "going": 468
   },
   {
    "id": "resident_advisor:2559276",
@@ -18962,7 +18983,8 @@
    ],
    "free": null,
    "price": "",
-   "description": ""
+   "description": "",
+   "going": 1
   },
   {
    "id": "resident_advisor:2558295",
@@ -19043,6 +19065,26 @@
    "going": 6
   },
   {
+   "id": "resident_advisor:2585491",
+   "source": "resident_advisor",
+   "title": "Tausend House: DJ Werd & Tmnit",
+   "start": "2026-11-21T21:00",
+   "end": "2026-11-22T03:00",
+   "allDay": false,
+   "venue": "Tausend",
+   "address": "",
+   "url": "https://ra.co/events/2585491",
+   "image": "",
+   "categories": [
+    "nightlife",
+    "music"
+   ],
+   "free": null,
+   "price": "",
+   "description": "",
+   "going": 1
+  },
+  {
    "id": "resident_advisor:2551742",
    "source": "resident_advisor",
    "title": "ÍNTIMO with Sarah Ninon, The Brahma & Jelle from the Block",
@@ -19119,7 +19161,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Katia Curie, Eli Verveine, Cosmo (KR), Elena Bi, Carmelina, AYURI",
-   "going": 102
+   "going": 106
   },
   {
    "id": "resident_advisor:2579556",
@@ -19198,7 +19240,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: PyjamaMama, Sika Akis, Epicx, Mia Mangata",
-   "going": 116
+   "going": 117
   },
   {
    "id": "resident_advisor:2549606",
@@ -19218,7 +19260,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: GTI, Hanna Baertig, Per Hammar, Alison Swing, Phonk D, Robin Flux",
-   "going": 63
+   "going": 70
   },
   {
    "id": "resident_advisor:2425561",
@@ -19238,7 +19280,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Klangkarussell",
-   "going": 227
+   "going": 228
   },
   {
    "id": "resident_advisor:2583675",
@@ -19396,7 +19438,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Segun",
-   "going": 1018
+   "going": 1020
   },
   {
    "id": "resident_advisor:2546489",
@@ -19436,7 +19478,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: State OFFF, Tekhole, courtroom drama, Leba, sass*",
-   "going": 110
+   "going": 111
   },
   {
    "id": "resident_advisor:2571838",
@@ -19516,7 +19558,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Siimon, SACID, DJ Festnetz",
-   "going": 116
+   "going": 117
   },
   {
    "id": "resident_advisor:2561682",
@@ -19556,7 +19598,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Amy Dabbs, Jeremy Sylvester, Natalie Robinson, Marc Brauner, Anna Schreit, Anjawah",
-   "going": 122
+   "going": 128
   },
   {
    "id": "resident_advisor:2554043",
@@ -19576,7 +19618,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Amøn, Fronsi, DJ Banba, DTEXX, Filialleiter, Luciid",
-   "going": 402
+   "going": 410
   },
   {
    "id": "resident_advisor:2583897",
@@ -19677,7 +19719,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: ābnamā, ADAM MUNNINGS, Curses, Deepneue, DJ KILLING, Kontronatura",
-   "going": 804
+   "going": 815
   },
   {
    "id": "resident_advisor:2540665",
@@ -19697,7 +19739,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Gideon Jackson, Joe BRT, SaPu, Natascha Kann",
-   "going": 63
+   "going": 64
   },
   {
    "id": "resident_advisor:2566068",
@@ -19717,7 +19759,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Julka (2), Anna Hoeber, VEGANICECREAM, EVYA, KIVII, Ankit",
-   "going": 298
+   "going": 300
   },
   {
    "id": "resident_advisor:2534067",
@@ -19737,7 +19779,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: The Bug, Warrior Queen, Prison Religion, Slimzee, Grandmixxer",
-   "going": 131
+   "going": 132
   },
   {
    "id": "resident_advisor:2565488",
@@ -19797,7 +19839,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: AAguilAA, ilbroccolovolante, ELITEWASTE, Melanie Havens, Glotzer, Miro Von",
-   "going": 253
+   "going": 256
   },
   {
    "id": "resident_advisor:2561572",
@@ -19857,7 +19899,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Aaron Blau, Jessica Nightlife, Bella Sarris, Lucky Lube, DJ AYA, puppy",
-   "going": 160
+   "going": 165
   },
   {
    "id": "resident_advisor:2543888",
@@ -19877,7 +19919,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: JakoJako, Kasper Marott, Paula Koski, Reka Zalan, Ron Albrecht, Stefan Goldmann",
-   "going": 188,
+   "going": 190,
    "alsoOn": [
     {
      "source": "resident_advisor",
@@ -19903,7 +19945,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Arlanoa, BENZA, Elvin, Jessie Granqvist, Iman Janes, Maris Shilton",
-   "going": 123
+   "going": 126
   },
   {
    "id": "kulturdaten:E_WM113W45P3BW",
@@ -20286,7 +20328,7 @@
     "social",
     "nightlife"
    ],
-   "free": true,
+   "free": false,
    "price": "",
    "description": "Hosted by Kinder Rave Global Events"
   },
@@ -20771,7 +20813,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: VRTL, Charlie Vaux, MVHY, Giulia Gutterer, DJ Bricks",
-   "going": 13
+   "going": 14
   },
   {
    "id": "kulturdaten:E_Q4B9AFSYFPKJ",
@@ -21056,7 +21098,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Okouru, kiku❁, annna (2), sselkie",
-   "going": 6
+   "going": 9
   },
   {
    "id": "resident_advisor:2557958",
@@ -21174,7 +21216,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Camilla Rae, Disco Samir, Otto Vlotto, 80HDJ, Vitling, Robot Girlfriend",
-   "going": 23
+   "going": 25
   },
   {
    "id": "resident_advisor:2564610",
@@ -21214,7 +21256,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Adrian Schneider, Iva Bodul, Judith Ahrends, Cedric Scheibel, Theo Gramal",
-   "going": 15
+   "going": 17
   },
   {
    "id": "resident_advisor:2575352",
@@ -21334,7 +21376,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: vernimoon",
-   "going": 1
+   "going": 2
   },
   {
    "id": "kulturdaten:E_4QKLZTLQ8AYY",
@@ -21439,7 +21481,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Timo Versemann",
-   "going": 7
+   "going": 8
   },
   {
    "id": "kulturdaten:E_N1YTFFKQ189B",
@@ -23591,7 +23633,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Keepsakes, Inverse Element, Milena Adamis, Sue Lèwig",
-   "going": 72
+   "going": 82
   },
   {
    "id": "kulturdaten:E_CTQQPB29LZKK",
@@ -25828,7 +25870,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 9
+   "going": 10
   },
   {
    "id": "resident_advisor:2577304",
@@ -25958,7 +26000,7 @@
    "venue": "",
    "address": "",
    "url": "https://luma.com/0vpxzr3u",
-   "image": "https://images.lumacdn.com/uploads/z1/1969a972-bdc5-4548-b3bd-1f8332073b30.jpg",
+   "image": "https://images.lumacdn.com/uploads/ot/55dea9f3-d2df-4c17-ab5c-297ae8a8f916.png",
    "categories": [
     "social"
    ],
@@ -25985,7 +26027,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Viiaan",
-   "going": 31
+   "going": 33
   },
   {
    "id": "kulturdaten:E_CSMCMJNER8NB",
@@ -26044,24 +26086,6 @@
    "price": "",
    "description": "Liebe Bewohnerinnen und Bewohner, viele Hinweise und Ideen von Ihnen zum Integrierten Städte baulichen Entwicklungskonzept (ISEK) für das Ostseeviertel sind bei uns eingegangen. Informieren Sie sich über: • die Ergebnisse der Beteiligung und Untersuchungen • geplante Maßnahmen…",
    "area": "Lichtenberg"
-  },
-  {
-   "id": "luma:evt-60DNnod8WP5GIDH",
-   "source": "luma",
-   "title": "spektr supper club: berlin",
-   "start": "2026-11-24T18:30",
-   "end": "2026-11-24T21:30",
-   "allDay": false,
-   "venue": "",
-   "address": "",
-   "url": "https://luma.com/spektr-supper-club-berlin",
-   "image": "https://images.lumacdn.com/uploads/hk/ffa36702-0b86-4404-b40a-3e7c0da48170.png",
-   "categories": [
-    "social"
-   ],
-   "free": true,
-   "price": "",
-   "description": "Hosted by spektr"
   },
   {
    "id": "kulturdaten:E_1WNMXMBS1BD1",
@@ -26176,7 +26200,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Lynnic",
-   "going": 10
+   "going": 11
   },
   {
    "id": "resident_advisor:2581604",
@@ -26196,7 +26220,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 3
+   "going": 4
   },
   {
    "id": "kulturdaten:E_EDW5K11ZHEH7",
@@ -26258,7 +26282,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 4
+   "going": 5
   },
   {
    "id": "resident_advisor:2564444",
@@ -26278,7 +26302,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Dicso_Muzek",
-   "going": 19
+   "going": 20
   },
   {
    "id": "resident_advisor:2567120",
@@ -26339,7 +26363,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Stephanie Sykes, Inverse Element, YASS CHÄTTMANN, LNZ.",
-   "going": 165
+   "going": 176
   },
   {
    "id": "kulturdaten:E_XD2PS5A5CP7Q",
@@ -28723,7 +28747,7 @@
    "free": true,
    "price": "",
    "description": "Hosted by Aspiring Founders Meetup",
-   "going": 62
+   "going": 63
   },
   {
    "id": "kulturdaten:E_JAFF8Q3C24LK",
@@ -28988,7 +29012,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: _ÄLI_, Joohin, Linda shiro",
-   "going": 2
+   "going": 3
   },
   {
    "id": "kulturdaten:E_LC8MFBTHT7W7",
@@ -29305,7 +29329,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: MËRO, MIMI404, Pamela Rave, Bouncy Bitch",
-   "going": 217
+   "going": 218
   },
   {
    "id": "resident_advisor:2518131",
@@ -31697,7 +31721,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: nuarrrrr",
-   "going": 13
+   "going": 14
   },
   {
    "id": "kulturdaten:E_GGKHHDMC4G3C",
@@ -32123,7 +32147,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 44
+   "going": 45
   },
   {
    "id": "kulturdaten:E_J7QNSXLB2EWD",
@@ -32542,7 +32566,7 @@
   {
    "id": "resident_advisor:2562401",
    "source": "resident_advisor",
-   "title": "Unity",
+   "title": "Unity --+--",
    "start": "2026-11-26T22:00",
    "end": "2026-11-27T06:00",
    "allDay": false,
@@ -32556,7 +32580,7 @@
    ],
    "free": null,
    "price": "",
-   "description": "",
+   "description": "Line-up: Yannick Weineck, Megaira",
    "going": 10
   },
   {
@@ -34715,7 +34739,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Mark Gill, Murrin, Pascale Project, The Pedagogist, Talia Dorr, David Böning",
-   "going": 40
+   "going": 43
   },
   {
    "id": "resident_advisor:2550112",
@@ -34919,7 +34943,7 @@
    "free": true,
    "price": "",
    "description": "Hosted by Personal",
-   "going": 74
+   "going": 79
   },
   {
    "id": "kulturdaten:E_DBX5ZM3QB1T4",
@@ -35152,7 +35176,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Tim Hagemann, Joey (2), Crystal O, Doram, Bonq, Chris Bekker",
-   "going": 182
+   "going": 186
   },
   {
    "id": "kulturdaten:E_23R3JNY4AWGL",
@@ -35270,7 +35294,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: saHHar, Nora Moon, T4NIT",
-   "going": 138
+   "going": 139
   },
   {
    "id": "resident_advisor:2583535",
@@ -35389,7 +35413,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Anaïs-Lin, Ash Roy, Cosmik Konnection, Folic State, Krumelur, Surreal (DE)",
-   "going": 22
+   "going": 23
   },
   {
    "id": "resident_advisor:2528960",
@@ -35429,7 +35453,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Anne-Sophie Selig, CEEE, Der olle Kramer, Fabian Fischbach, MARIE CLAIRE, tzunamic",
-   "going": 21
+   "going": 22
   },
   {
    "id": "resident_advisor:2575548",
@@ -35449,7 +35473,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Artfx!, Bin Okin, Salvo Salvatore",
-   "going": 2
+   "going": 3
   },
   {
    "id": "resident_advisor:2564317",
@@ -35569,7 +35593,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: HNX (030), Syndrolin, DSC7, Lisa de Lune",
-   "going": 6
+   "going": 7
   },
   {
    "id": "resident_advisor:2551290",
@@ -35669,7 +35693,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Subtrax, Headstorm, futurristic, SARIAN, LAURIX (DE), Flex on Trax",
-   "going": 64
+   "going": 70
   },
   {
    "id": "resident_advisor:2567740",
@@ -35689,7 +35713,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Bent, Distal_, La Fille",
-   "going": 78
+   "going": 79
   },
   {
    "id": "resident_advisor:2556309",
@@ -35749,7 +35773,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Only Fire, DBBD, HARD CANDY (GER), INEXXSTABLE, RON B, Shanti Celeste",
-   "going": 513
+   "going": 517
   },
   {
    "id": "resident_advisor:2523344",
@@ -35769,7 +35793,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: CAIVA, Frederic., Panteros666, PRADA2000, Keyklau",
-   "going": 318
+   "going": 322
   },
   {
    "id": "resident_advisor:2552455",
@@ -35869,7 +35893,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Aexhy, Apexsion, C150, ch4r20tte, DJ Reiz, DJ ritalino",
-   "going": 169
+   "going": 170
   },
   {
    "id": "resident_advisor:2550804",
@@ -35889,7 +35913,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: DJ Spit, Huey Mnemonic, Manni Dee, Nene H, DJ Stingray 313, Nala Brown",
-   "going": 165
+   "going": 167
   },
   {
    "id": "resident_advisor:2559038",
@@ -35909,7 +35933,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: lionza",
-   "going": 41
+   "going": 43
   },
   {
    "id": "resident_advisor:2563658",
@@ -35969,7 +35993,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Adolpho & Franky, Bonnie Ford, Caren Callas, Coco, dinaLiks, EllA",
-   "going": 171,
+   "going": 175,
    "alsoOn": [
     {
      "source": "resident_advisor",
@@ -35995,7 +36019,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Amanda Mussi, Byron Yeates, E-Talking, Luigi Di Venere, Majdolen, Maria Politi",
-   "going": 408
+   "going": 414
   },
   {
    "id": "resident_advisor:2573308",
@@ -36043,6 +36067,26 @@
      "url": "https://ra.co/events/2571751"
     }
    ]
+  },
+  {
+   "id": "resident_advisor:2585362",
+   "source": "resident_advisor",
+   "title": "Urban Spree KLUBNACHT x RECESS",
+   "start": "2026-11-27T23:59",
+   "end": "2026-11-28T07:00",
+   "allDay": false,
+   "venue": "Urban Spree",
+   "address": "",
+   "url": "https://ra.co/events/2585362",
+   "image": "",
+   "categories": [
+    "nightlife",
+    "music"
+   ],
+   "free": null,
+   "price": "",
+   "description": "Line-up: Airshpd, Katiusha, MXX_, superamas",
+   "going": 2
   },
   {
    "id": "kulturdaten:E_QAG18G6BQ2ZW",
@@ -37339,7 +37383,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Cosmic Cherry, Dj Norma, DJ NORTHERN, Greta Spark, Karina Schneider, Marc Schneider",
-   "going": 262
+   "going": 265
   },
   {
    "id": "kulturdaten:E_HHA4L86LQP7E",
@@ -37379,7 +37423,7 @@
    "free": true,
    "price": "",
    "description": "Hosted by Personal",
-   "going": 27
+   "going": 29
   },
   {
    "id": "kulturdaten:E_2ZDCY5L6DH13",
@@ -37655,7 +37699,7 @@
    ],
    "free": null,
    "price": "",
-   "description": "",
+   "description": "Line-up: Phil Richarde",
    "going": 8
   },
   {
@@ -37914,7 +37958,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Jelle from the Block, Furotica, GTI, Laylla Dane, Tactile, Sarahtonin",
-   "going": 44
+   "going": 45
   },
   {
    "id": "resident_advisor:2570639",
@@ -38072,7 +38116,7 @@
    "free": true,
    "price": "",
    "description": "Hosted by Personal",
-   "going": 156
+   "going": 159
   },
   {
    "id": "kulturdaten:E_TTEZYXJWESQZ",
@@ -38241,7 +38285,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Cosmic Gate, Malouna",
-   "going": 80
+   "going": 81
   },
   {
    "id": "kulturdaten:E_XR7JM7GQEHQN",
@@ -38320,7 +38364,28 @@
    "free": true,
    "price": "",
    "description": "Hosted by SEE OUR VISION",
-   "going": 71
+   "going": 72
+  },
+  {
+   "id": "resident_advisor:2585424",
+   "source": "resident_advisor",
+   "title": "Polish Party & Karaoke Night",
+   "start": "2026-11-28T19:00",
+   "end": "2026-11-29T02:00",
+   "allDay": false,
+   "venue": "Palmera Bar",
+   "address": "",
+   "url": "https://ra.co/events/2585424",
+   "image": "",
+   "categories": [
+    "nightlife",
+    "music",
+    "social"
+   ],
+   "free": null,
+   "price": "",
+   "description": "",
+   "going": 1
   },
   {
    "id": "resident_advisor:2423562",
@@ -38340,7 +38405,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 250
+   "going": 252
   },
   {
    "id": "resident_advisor:2374686",
@@ -38617,7 +38682,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Bad Boombox, future.666, ÜBERKIKZ, David Löhlein, Alycia Bezgo, DJ Hyperdrive",
-   "going": 2450
+   "going": 2468
   },
   {
    "id": "resident_advisor:2574370",
@@ -38755,7 +38820,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Argia, Borella, Britta Arnold, Chris Schwarzwälder, ELIF, Frankey & Sandrino",
-   "going": 217,
+   "going": 218,
    "alsoOn": [
     {
      "source": "resident_advisor",
@@ -38923,7 +38988,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: ALADAG, Nandu, Robag Wruhme",
-   "going": 96
+   "going": 98
   },
   {
    "id": "resident_advisor:2558855",
@@ -38983,7 +39048,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Oliver Huntemann, Wanda Wild, Aio",
-   "going": 86
+   "going": 87
   },
   {
    "id": "resident_advisor:2572021",
@@ -39161,7 +39226,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Julien Josh, Gregor Rost, Ashbeat, ZYMT, fuxi",
-   "going": 24
+   "going": 25
   },
   {
    "id": "resident_advisor:2562564",
@@ -39221,7 +39286,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Athina, Ben Techy, Danilo Filipe, DJ HOTMAIL, In Furcht, jeanska",
-   "going": 453
+   "going": 456
   },
   {
    "id": "resident_advisor:2564419",
@@ -39321,7 +39386,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Monile, Rakim Under, Anaté, CHUKWU, Mati Amoretti, oulcan",
-   "going": 130
+   "going": 131
   },
   {
    "id": "resident_advisor:2581010",
@@ -39501,7 +39566,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Aöcram, Denise Rabe, Fabian Garrido, Ignez, Kwartz, Mari Sakurai",
-   "going": 183,
+   "going": 186,
    "alsoOn": [
     {
      "source": "resident_advisor",
@@ -40353,7 +40418,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Josefina Tapia (2), Juhani Oivo, 0dysseus, tanzschuh",
-   "going": 38
+   "going": 39
   },
   {
    "id": "kulturdaten:E_Y4GC5X5MWJZ5",
@@ -40473,7 +40538,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 50
+   "going": 51
   },
   {
    "id": "resident_advisor:2584074",
@@ -40631,7 +40696,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Mystique (2), Odd Shy Guy, Eleftheria, kawasaki2000, Ben Sleia",
-   "going": 11
+   "going": 12
   },
   {
    "id": "kulturdaten:E_MNDY8M75X2DG",
@@ -40673,7 +40738,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: yungfya, Hello Sasy, Perra Inmunda, e.m.s., DJIL, Heimlich Maneuver",
-   "going": 18
+   "going": 19
   },
   {
    "id": "kulturdaten:E_2JARYH6N37FA",
@@ -40967,7 +41032,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Okvsho",
-   "going": 42,
+   "going": 43,
    "alsoOn": [
     {
      "source": "resident_advisor",
@@ -42923,7 +42988,7 @@
    "free": null,
    "price": "",
    "description": "",
-   "going": 83
+   "going": 86
   },
   {
    "id": "resident_advisor:2472209",
@@ -43003,7 +43068,7 @@
    "free": null,
    "price": "",
    "description": "Line-up: Danny Wabbit, Alex.Do, Ruslan Mays, Parisha",
-   "going": 85
+   "going": 96
   },
   {
    "id": "kulturdaten:E_476ZYS43Y7Z1",
@@ -59434,7 +59499,7 @@
    "free": false,
    "price": "from 22 EUR",
    "description": "Hosted by Späti Stories Calendar",
-   "going": 59
+   "going": 62
   },
   {
    "id": "kulturdaten:E_A6H9PHRZ77JC",
